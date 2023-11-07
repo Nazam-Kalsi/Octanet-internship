@@ -1,0 +1,289 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  color: white;
+  font-family: "DM Sans", sans-serif;
+}
+.fsize {
+  font-size: 25px;
+}
+body {
+  background-color: black;
+}
+.hsize {
+  font-size: 50px;
+  font-weight: 900;
+}
+.mar
+{
+  margin:0px 9.5rem ;
+}
+.rel  {
+  position: relative;
+}
+#btn1 {
+padding: 7px 7px;
+font-size: 0.9rem;
+width: 85px;
+height: 35px;
+}
+.btn2 {
+  border: 1px solid rgb(106, 104, 104);
+  padding: 0px 7px;
+  background-color: rgba(0, 0, 0, 0.461);
+  font-size: 1rem;
+  margin: 0px 20px 0pc 0pc;
+  border-radius: 4px;
+  width: 100px;
+  height: 2.2rem;
+  color: white;
+  cursor: pointer;
+}
+ #btn3 {
+  width: 14rem;
+  height: 3.4rem;
+  font-size: 16px;
+} 
+.btnt {
+  border-radius: 4px;
+  background-color: red;
+  border: none;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.btnt:hover {
+  background-color: rgb(202, 4, 4);
+}
+div input[type="email"] {
+  width: 24rem;
+  height: 3.4rem;
+  background-color: rgba(0, 0, 0, 0.323);
+  font-size: 16px;
+  border: 1pt solid rgb(104, 104, 104);
+  border-radius: 4px;
+  margin-right: 6px;
+  padding: 0px  20px;
+}
+.placeholder
+{
+  position :absolute;
+  font-size: 1.2rem;
+  left: 1rem;
+  top: 1rem;
+  color: rgb(188, 186, 186);
+  transition: all 0.1s ease-in-out;
+  z-index: -1;
+}
+input[type="email"]:focus + .placeholder
+{
+  top :-1px;
+  font-size: 1rem;  
+}
+
+
+#banner {
+  display: flex;
+  flex-direction: column;
+  height: 110vh;
+  align-items: center;
+  gap: 10em;
+}
+
+#banner::before {
+  content: "";
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(5, 5, 5, 0.469),rgba(0, 0, 0, 0.8)), url(./images/banner_bg.jpg);
+  position: absolute;
+  background-size:cover;
+  background-position: center;
+  height: 110vh;
+  width: 98vw;
+  z-index: -1;
+  }
+
+#head {
+  margin-top: 22px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 77vw;
+}
+#head > div {
+  display: flex;
+  align-items: center;
+}
+
+#text {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#p {
+  text-align: center;
+  font-size: 1.6rem;
+
+}
+#p > p {
+  margin: 14px 0px;
+}
+
+/* ---------------------------------------------item1---------------------------------------------- */
+
+.btop {
+  border-top: 8px solid rgba(128, 128, 128, 0.302);
+}
+.btop img {
+  scale: 1.1;
+}
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 65px 185px;
+}
+.btop div {
+  position: relative;
+
+}
+#vid1 {
+  position: absolute;
+  top: -42px;
+  right: 50px;
+  height: 465px;
+  width: 433px;
+  z-index: -1;
+}
+#vid2 {
+  position: absolute;
+  top: 3px;
+  right: 80px;
+  height: 250px;
+  width: 340px;
+  z-index: -1;
+}
+#sthings {
+  position: absolute;
+  bottom: 30px;
+  left: 105px;
+  border: 2px solid gray;
+  border-radius: 14px;
+  width: 18rem;
+  height: 6.5rem;
+  background-color: black;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+#sthings img {
+  height: 5.2em;
+  margin: 0px 0px 0px 9px;
+  border-radius: 6px;
+}
+#sthings div+img{
+  filter: invert();
+  width: 30px;
+  height: 30px;
+} 
+
+#sthings div {
+  position: relative;
+  bottom: 5px;
+  left: -5px;
+  font-size: 0.9rem;
+}
+/* ------------------------------footer------------------------------------- */
+
+footer > div {
+  padding: 8rem 13rem;
+}
+footer div > p {
+  text-align: center;
+  padding-bottom: 10px;
+}
+#detail {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+  margin: 9px 0rem 3rem 0rem;
+}
+#detail >div {
+  width: 100%;
+  margin: 2px 0px;
+  background-color: rgba(128, 128, 128, 0.337);
+  font-size: 23px;
+}
+footer details:hover {
+  background-color: rgba(128, 128, 128, 0.453);
+}
+#detail div p {
+  position: absolute;
+  top: -10px;
+  right: 40px;
+  scale: 2.5;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+details > summary {
+  list-style: none;
+  padding: 25px;
+  transition: margin 150ms ease-out;
+}
+details[open] summary{
+  margin-bottom: 10px;
+}
+details >div
+{
+  padding: 2rem 2rem;
+}
+.indetail
+{
+  height: 3px;
+  background-color: black;
+  border: none;
+}
+footer p + div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer details + p {
+  font-size: 20px;
+  margin-top: 3rem;
+}
+
+footer span + div {
+  display: flex;
+  justify-content: space-between;
+}
+footer div + p {
+  font-size: 1.4rem;
+}
+
+section li {
+  list-style: none;
+}
+section > div {
+  margin:5rem 12rem;
+  color: rgb(190, 189, 189);
+}
+section ul
+{
+  margin:2rem 0rem 0px 0px;
+
+}
+section li {
+  color: rgb(190, 189, 189);
+  padding: 0.61em 0px;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+span {
+  color: rgb(190, 189, 189);
+}
+span span
+{
+  text-decoration: underline;
+  cursor: pointer;
+}
